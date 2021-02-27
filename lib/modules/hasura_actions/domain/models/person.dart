@@ -17,8 +17,8 @@ class Person {
     if (map == null) return null;
 
     return Person(
-      weight: map['person']['weight'].toDouble(),
-      height: map['person']['height'].toDouble(),
+      weight: map['weight'].toDouble(),
+      height: map['height'].toDouble(),
     );
   }
 

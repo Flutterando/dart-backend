@@ -5,11 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "backend",
+            "name": "function",
             "program": "bin/server.dart",
             "request": "launch",
             "type": "dart",
-            "args": ["--port", "8081"]
+            "args": ["--port", "8081", "--target"]
+        },
+        {
+            "name": "hasuraActions",
+            "program": "bin/server.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": ["--port", "8081", "--target", "hasuraActions"]
         }
     ]
 }

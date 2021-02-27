@@ -7,7 +7,12 @@ publish_to: none
 environment:
   sdk: ">=2.10.0 <3.0.0"
 
+scripts:
+  up: docker-compose up
+  up_build: docker-compose build & docker-compose up
+
 dependencies:
+  dio: ^3.0.10
   path: ^1.7.0
   uuid: ^2.2.2
   functions_framework: ^0.3.0

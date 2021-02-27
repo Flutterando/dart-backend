@@ -21,12 +21,6 @@ Future<void> main(List<String> args) async {
 }
 
 const _functionTargets = <FunctionTarget>{
-  FunctionTarget.http(
-    'function',
-    function_library.function,
-  ),
-  FunctionTarget.http(
-    'hasuraActions',
-    function_library.hasuraActions,
-  ),
+  FunctionTarget.http('function', function_library.function),
+  FunctionTarget.http('hasuraActions', function_library.hasuraActions),
 };
